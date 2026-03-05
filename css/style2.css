@@ -1,0 +1,802 @@
+@charset "utf-8";
+/* webfont */
+
+@font-face {
+    font-family: 'DaeguDongseongRo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2511-1@1.0/DaeguDongseongro-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DaeguDongseongRo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2511-1@1.0/DaeguDongseongro-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-1Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-2ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-3Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+/* 웹폰트없으면 지우세요!!! */
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+em,
+img,
+small,
+strong,
+b,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+section,
+summary,
+video,
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    /* Prevent font scaling in landscape */
+
+    -webkit-text-size-adjust: none;
+    /*Chrome, Safari, newer versions of Opera*/
+
+    -moz-text-size-adjust: none;
+    /*Firefox*/
+
+    -ms-text-size-adjust: none;
+    /*Ie*/
+
+    -o-text-size-adjust: none;
+    /*old versions of Opera*/
+}
+
+body {
+    font-family: 'Paperozi';
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #111;
+}
+
+#wrap {
+    min-width: 1360px;
+}
+
+/* haeder */
+#header {
+    /* header스크롤시 고정하고싶음 */
+    position: sticky;
+    /* 스크롤 내릴 때 화면에 고정 */
+    top: 0;
+    /* 화면 맨 위 위치에 고정 */
+    z-index: 999;
+    /* 다른 이미지나 콘텐츠보다 항상 맨 위에 오도록 설정 */
+
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(17, 17, 17, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.inner_header {
+    display: flex;
+    width: 1320px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 100%;
+}
+.gnb {
+    display: flex;
+    gap: 100px;
+}
+
+.logo img {
+    display: block;
+}
+
+.gnb1 {
+    display: flex;
+    gap: 100px;
+}
+
+
+/* 메인배너이미지 */
+#mainbanner img {
+    display: block;
+    width: 100%;
+}
+
+
+/* ----------------------------------
+   댕플레이스 전체 배경
+---------------------------------- */
+.daengplace_bg_wrap {
+    width: 100%;
+    height: 2800px;
+    /* 요청하신 전체 높이 */
+    /* F9F5EC에서 시작해서 맨 아래 5% 구간만 fff(흰색)으로 자연스럽게 빠지는 그라데이션 */
+    background: linear-gradient(to bottom, #F9F5EC 0%, #F9F5EC 95%, #ffffff 100%);
+    padding-top: 150px;
+    /* 메인 배너와 인트로 사이의 위쪽 여백 */
+    box-sizing: border-box;
+}
+
+
+
+/* ----------------------------------
+   댕플레이스 상단 인트로
+---------------------------------- */
+.inner_place_intro {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    /* 좌우 중앙 정렬 */
+    align-items: flex-start;
+    /* 위아래 중앙 정렬 */
+    gap: 150px;
+    /* 텍스트 뭉치와 캐릭터 사이의 간격 */
+}
+
+
+/* --- 왼쪽 텍스트 정렬 --- */
+.intro_left {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.place_title_box {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 30px;
+    /* 타이틀과 h3 사이 간격 30px */
+}
+
+/* 3. "댕플레이스" 폰트 설정 */
+.place_title_box h2 {
+    font-family: 'Paperozi';
+    font-weight: 700;
+    /* 7Bold */
+    font-size: 45px;
+    color: #D08E4A;
+    position: relative;
+    z-index: 2;
+    /* 아이콘들보다 글자가 위로 오게 설정 */
+}
+
+/* 타이틀 양옆 아이콘 위치 제어 */
+.icon_coffee {
+    position: absolute;
+    top: -100px;
+    left: -120px;
+    width: 120px;
+    /* 아이콘 크기 (필요시 조절) */
+    z-index: 1;
+}
+
+.icon_plate {
+    position: absolute;
+    top: -65px;
+    right: -190px;
+    width: 140px;
+    /* 아이콘 크기 (필요시 조절) */
+    z-index: 1;
+}
+
+/* 4. 중제목 (댕부산이 고른~) 설정 */
+.intro_left h3 {
+    font-family: 'Paperozi';
+    font-weight: 500;
+    /* 5Medium */
+    font-size: 35px;
+    color: #111111;
+    margin-bottom: 60px;
+    /* h3와 아래 본문(p) 사이의 넉넉한 여백 */
+}
+
+/* 5. 본문 (강아지와 함께) 설정 */
+.intro_left p {
+    font-family: 'Paperozi';
+    font-weight: 500;
+    /* 5Medium */
+    font-size: 25px;
+    color: #111111;
+    line-height: 50px;
+    /* 행간 50px */
+}
+
+
+/* --- 오른쪽 캐릭터 영역 --- */
+.intro_right {
+    margin-top: -50px;
+}
+
+.intro_right img {
+    display: block;
+    width: 440px;
+    /* 캐릭터 이미지 크기 (시안 비율에 맞게 조절 가능) */
+}
+
+
+/* ----------------------------------
+   댕플레이스 지그재그 리스트 섹션
+---------------------------------- */
+.place_list_wrap {
+    width: 100%;
+    margin-top: 200px;
+    /* 상단 인트로 영역과의 간격 */
+}
+
+.inner_place_list {
+    width: 1100px;
+    /* 전체 래퍼 너비를 이미지 비율에 맞게 살짝 좁힘 */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 22px;
+    /* 위아래 줄 사이의 간격 */
+}
+
+/* 개별 가로 줄 세팅 */
+.list_row {
+    display: flex;
+    align-items: center;
+    /* 세로 중앙 정렬 */
+    justify-content: space-between;
+    /* 양쪽 끝 정렬 */
+}
+
+/* 두 번째 줄 좌우 반전용 클래스 */
+.list_row.row_reverse {
+    flex-direction: row-reverse;
+}
+
+/* --- 텍스트 박스 스타일 --- */
+.text_box {
+    width: 530px;
+    height: 650px;
+    box-sizing: border-box;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text_left {
+    align-items: flex-end;
+    text-align: right;
+}
+
+.text_right {
+    align-items: flex-start;
+}
+
+/* 1. 카테고리 라운드 뱃지 (호버xxxx) */
+.category_badge {
+    display: inline-block;
+    background-color: #D08E4A;
+    color: #fff;
+    font-family: 'Paperozi';
+    font-weight: 700;
+    font-size: 24px;
+    padding: 8px 30px;
+    border-radius: 50px;
+}
+
+/* 2. 메인 타이틀 */
+.text_box h4 {
+    margin-top: 35px;
+    /* 뱃지와의 간격 35px */
+    font-family: 'Paperozi';
+    font-weight: 700;
+    /* 7Bold */
+    font-size: 40px;
+    color: #111111;
+    line-height: 1.4;
+}
+
+/* 3. 설명 문구 (시안에 있는 세로선 디테일 추가) */
+.text_box p {
+    margin-top: 15px;
+    /* 타이틀과의 간격 15px */
+    font-family: 'Paperozi';
+    font-weight: 500;
+    /* 5Medium */
+    font-size: 20px;
+    color: #111111;
+    line-height: 1.5;
+
+}
+
+.text_left p {
+    /* 왼쪽에 얇은 선 넣기 */
+    border-right: 3px solid #111;
+    padding-right: 15px;
+    /* 선과 글자 사이 간격 */
+}
+
+.text_right p {
+    /* 왼쪽에 얇은 선 넣기 */
+    border-left: 3px solid #111;
+    padding-left: 15px;
+    /* 선과 글자 사이 간격 */
+}
+
+
+/* --- 4. 이미지 박스 및 자세히보기 호버 효과 --- */
+.img_box {
+    width: 530px;
+    height: 650px;
+    border-radius: 20px;
+    overflow: hidden;
+    /* 이미지가 둥근 모서리를 넘지 않게 자름 */
+}
+
+.img_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.img_inner img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* 마우스 올렸을 때 덮이는 반투명 배경 */
+.hover_more {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 검은색 반투명 50% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    /* 평소에는 투명해서 안 보임 */
+    transition: opacity 0.3s ease;
+    /* 부드럽게 나타나는 효과 */
+}
+
+/* 더보기 글자 스타일 */
+.hover_more span {
+    font-family: 'Paperozi';
+    font-weight: 700;
+    font-size: 22px;
+    color: #fff;
+    border: 2px solid #fff;
+    /* 흰색 테두리 */
+    padding: 10px 35px;
+    border-radius: 50px;
+}
+
+/* 마우스 호버 시 작동 */
+.img_inner:hover .hover_more {
+    opacity: 1;
+    /* 투명도 100%로 나타남 */
+}
+
+#text_flow_section {
+    width: 100%;
+
+    /* 섹션 높이를 이미지 높이에 맞춰 적절히 설정 */
+    height: 250px;
+
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+
+    margin-top: 0;
+}
+
+/* 움직이는 트랙 */
+.flow_track {
+    display: flex;
+    width: fit-content;
+    /* 속도조절 : 30s를 숫자를 늘리면 느려지고, 줄이면 빨라짐 */
+    animation: flowAni 10s linear infinite;
+}
+
+/* 그룹단위 */
+.flow_group {
+    display: flex;
+    flex-shrink: 0;
+    /* 줄어들지않게 고정 */
+}
+
+/* 중요!! 통 이미지 스타일 설정 */
+.flow_group img {
+    height: 100%;
+    width: auto;
+    display: block;
+
+    /* 이미지 연결 부위의 미세한 틈 없애기 */
+    margin-right: -1px;
+}
+
+/* 흐르는 애니메이션 정의 (그대로유지) */
+@keyframes flowAni {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+        /* 정확히 절반 이동 후 리셋 */
+    }
+}
+
+
+
+/* ----------------------------------
+   댕부산 핫플레이스 섹션
+---------------------------------- */
+.hotplace_wrap {
+    width: 100%;
+    padding: 150px 0 200px;
+    /* 위아래 여백 넉넉히 */
+}
+
+.inner_hotplace {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    /* 타이틀 중앙 정렬 */
+}
+
+/* 1 & 2. 타이틀 폰트 및 컬러 설정 */
+.hotplace_title {
+    margin-bottom: 100px;
+    /* 갤러리와의 간격 */
+}
+
+.hotplace_title h2 {
+    font-family: 'Paperozi';
+    font-weight: 700;
+    /* 7Bold */
+    font-size: 45px;
+    color: #111111;
+}
+
+.hotplace_title h2 .point_text {
+    color: #D08E4A;
+    /* 댕부산 핫플레이스 컬러 변경 */
+}
+
+/* 3. 갤러리 레이아웃 (지그재그 배치를 위한 뼈대) */
+.hotplace_gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* 이미지 사이의 가로 간격 */
+}
+
+/* 개별 이미지 공통 설정 */
+.hotplace_item {
+    position: relative;
+    width: 240px;
+    /* 카드의 너비 (시안 비율에 맞춤) */
+    height: 240px;
+    /* 카드의 높이 */
+    border-radius: 20px;
+    overflow: hidden;
+    /* ★중요: 호버 시 이미지가 둥근 테두리 밖으로 안 튀어나가게 함 */
+    cursor: pointer;
+}
+
+.hotplace_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* 이미지가 박스에 꽉 차게 */
+    transition: transform 0.4s ease;
+    /* 부드러운 확대 애니메이션 */
+}
+
+/* ★ 지그재그 위아래 높낮이 세팅 */
+.item1 {
+    transform: translateY(-30px);
+}
+
+/* 위로 */
+.item2 {
+    transform: translateY(80px);
+}
+
+/* 아래로 많이 */
+.item3 {
+    transform: translateY(-30px);
+}
+
+/* 위로 */
+.item4 {
+    transform: translateY(80px);
+}
+
+/* 아래로 많이 */
+.item5 {
+    transform: translateY(-30px);
+}
+
+/* 위로 */
+
+/* 3번 호버 효과: 마우스 올리면 이미지 커짐 */
+.hotplace_item:hover img {
+    transform: scale(1.15);
+    /* 1.15배 확대 */
+}
+
+/* 호버 효과: 반투명 검정 배경 & 글씨 나타나기 */
+.hover_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+    /* 반투명 검은색 덮기 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    /* 투명하게 숨김 */
+}
+
+.hotplace_item:hover .hover_overlay {
+    opacity: 1;
+    /* 마우스 올리면 투명도 100%*/
+}
+
+.hover_overlay span {
+    font-family: 'Paperozi';
+    font-weight: 700;
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+    word-break: keep-all;
+    padding: 0 15px;
+}
+
+
+
+
+
+
+
+/* footer 시작 */
+
+#footer {
+    width: 100%;
+    /* 배경 그라데이션 */
+    background: linear-gradient(to bottom, #fff 0%, #FFE2A5 100%);
+    padding-top: 120px;
+    /* padding-bottom은 f_bottom_box에서 처리 */
+}
+
+.inner_footer {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+
+
+/* 상단박스 */
+.f_top_box {
+    display: flex;
+    justify-content: space-between;
+    /* 양 끝 정렬 */
+    align-items: center;
+    /* 세로중앙정렬 */
+    padding-bottom: 40px;
+    /* 하단 선과의 간격 */
+}
+
+
+/* 왼쪽 로고 */
+.f_logo img {
+    width: 120px;
+    /* 로고 크기 조절 */
+    display: block;
+}
+
+/* 가운데 회사 정보 */
+.f_info {
+    flex-grow: 1;
+    /* 남는 공간 차지 */
+    padding-left: 90px;
+    /* 로고와의 간격 */
+    text-align: left;
+}
+
+.f_info p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2.5;
+    /* 줄간격 */
+    color: #333;
+    font-family: 'Paperozi', sans-serif;
+}
+
+.f_info span {
+    font-weight: 800;
+    margin-right: 5px;
+    color: #111;
+}
+
+/* 오른쪽 Contact & sns */
+
+.f_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* 오른쪽정렬 */
+    gap: 35px;
+}
+
+
+.fc_txt {
+    text-align: right;
+    font-family: 'Paperozi', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* 두 텍스트 사이 간격 주기 */
+.fc_txt p {
+    margin-bottom: 25px;
+}
+
+.fc_txt p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+/* 아이콘3개 */
+
+.fc_icons {
+    display: flex;
+    gap: 20px;
+}
+
+.fc_icons img {
+    width: 40px;
+    /* 아이콘 크기 */
+    display: block;
+}
+
+/* 하단 박스(카피라이트+상단실선) */
+.f_bottom_box {
+    /* border-top: 1px solid #a4998e;
+    padding: 30px 0 50px; /* 위30, 아래 50 */
+    /* text-align: center; */
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 0 30px;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #555;
+    font-family: 'Paperozi', sans-serif;
+    letter-spacing: 0;
+}

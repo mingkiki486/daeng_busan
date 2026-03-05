@@ -1,0 +1,1055 @@
+@charset "utf-8";
+/* webfont */
+
+@font-face {
+    font-family: 'DaeguDongseongRo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2511-1@1.0/DaeguDongseongro-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DaeguDongseongRo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2511-1@1.0/DaeguDongseongro-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-1Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-2ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-3Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+/* 웹폰트없으면 지우세요!!! */
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+em,
+img,
+small,
+strong,
+b,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+section,
+summary,
+video,
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    /* Prevent font scaling in landscape */
+
+    -webkit-text-size-adjust: none;
+    /*Chrome, Safari, newer versions of Opera*/
+
+    -moz-text-size-adjust: none;
+    /*Firefox*/
+
+    -ms-text-size-adjust: none;
+    /*Ie*/
+
+    -o-text-size-adjust: none;
+    /*old versions of Opera*/
+
+    /* 아래 한 줄을 추가해 주세요! */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Paperozi';
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #111;
+}
+
+#wrap {
+    min-width: 1360px;
+    overflow: hidden;
+}
+
+/* haeder */
+#header {
+    /* header스크롤시 고정하고싶음 */
+    position: sticky;
+    /* 스크롤 내릴 때 화면에 고정 */
+    top: 0;
+    /* 화면 맨 위 위치에 고정 */
+    z-index: 999;
+    /* 다른 이미지나 콘텐츠보다 항상 맨 위에 오도록 설정 */
+
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(17, 17, 17, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.inner_header {
+    display: flex;
+    width: 1320px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 100%;
+}
+
+.gnb {
+    display: flex;
+    gap: 100px;
+}
+
+.logo img {
+    display: block;
+}
+
+.gnb1 {
+    display: flex;
+    gap: 100px;
+}
+
+
+
+
+/* main_banner */
+#mainbanner {
+    position: relative;
+    width: 100%;
+    height: 562px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#mainbanner img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+/* 버튼 그룹 위치 잡기(이미지위에 띄우기) */
+.banner_btns {
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    display: flex;
+    gap: 20px;
+}
+
+/* 버튼 디자인 꾸미기 */
+.banner_btns a {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 20px;
+    background-color: rgba(147, 147, 147, 0.7);
+}
+
+/* 마우스 올렸을 때 효과 */
+.banner_btns a:hover {
+    background-color: #F9F5EC;
+    color: #000;
+    border-color: #F9F5EC;
+    transition: all 0.5s;
+}
+
+/* 메인페이지 브랜드 소개 섹션 전체 틀 */
+#brand_intro {
+    width: 100%;
+    max-width: 1920px;
+    height: 1555px;
+    background-color: #f9f5ec;
+    margin: 0 auto;
+
+    /* 내부 내용물 중앙 정렬을 위한 설정 */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: 130px;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+
+
+}
+
+
+/* 내용을 감싸는 박스(너비제한용) */
+.inner_intro {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    /* padding-top: 130px; */
+}
+
+/* 왼쪽 캐릭터 그룹 */
+.char_group {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+/* 오른쪽 텍스트 그룹 */
+.text_group {
+    text-align: left;
+}
+
+.text_group h2 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.5em;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+/* '가장 귀여운' 강조 색상 */
+.text_group h2 .highlight {
+    color: #D08E4A;
+}
+
+.text_group p {
+    font-size: 20px;
+    color: #111;
+    font-weight: 400;
+}
+
+
+
+/* 2. 배너 리스트 전체 틀 */
+#banner_list {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* 3.개별 배너 아이템(기준점) */
+.banner_item {
+    position: relative;
+    width: 100%;
+    line-height: 0;
+}
+
+.banner_item img {
+    width: 100%;
+    display: block;
+}
+
+/* 4. 바로가기 버튼 디자인 */
+.go_btn {
+    position: absolute;
+    top: 75%;
+    right: 150px;
+    transform: translateY(-50%);
+
+    display: line-block;
+    padding: 10px 30px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    line-height: 1.2;
+}
+
+.go_btn:hover {
+    background-color: #7e5c38;
+    color: #fff;
+    font-weight: bold;
+    border-color: #7e5c38;
+    transition: all 0.5s;
+}
+
+/* 댕스팟 갈색버튼 스타일 추가 */
+.go_btn.brown_style {
+    color: #7e5c38;
+    border-color: #7e5c38;
+}
+
+.go_btn.brown_style:hover {
+    background-color: #7e5c38;
+    color: #fff;
+}
+
+
+
+
+
+/* 1. 지도 섹션 전체 틀 */
+#map_section {
+    width: 1320px;
+    padding: 70px 0 100px;
+    margin: 0 auto;
+}
+
+.inner_map {
+    width: 1200px;
+    /* 전체너비 */
+    margin: 0 auto;
+    /* 중앙정렬 */
+    display: flex;
+    flex-direction: column;
+    /* 위(타이틀) 아래(지도) 배치 */
+    align-items: center;
+    /* 가운데정렬함 */
+    gap: 30px;
+    /* 타이틀과 지도 사이 간격 */
+}
+
+/* 지도와 팝업을 가로로 배치하는 틀 */
+.map_flex_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: flex-start;
+    position: relative;
+}
+
+
+
+/* 2. 상단 타이틀 영역(강아지+글자) */
+.map_title_box {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: auto;
+    margin-left: 100px;
+}
+
+.title_text h2 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.4em;
+    color: #111;
+}
+
+
+/* 3. 지도영역!!(이미지+글자들) */
+.map_area {
+    position: relative;
+    /* 글자 위치의 기준점! */
+    width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+/* .busan_map_img {
+    width: 100%;
+    display: block;
+}
+ */
+
+.map-svg path {
+    cursor: pointer;
+    transition: fill 0.2s, transform 0.2s;
+}
+
+.map-svg path.active-hover {
+    opacity: 0.5 !important;
+    transform: translateY(-2px);
+}
+
+/* 클릭되어 활성화된 상태 */
+.map-svg path.active {
+    fill: #ABD0E8 !important;
+    opacity: 1 !important;
+}
+
+/* 기장군 텍스트만 손가락 모양 나오게 수정 */
+.loc_txt {
+    cursor: pointer;
+    /* transition: 0.3s; */
+    transition: all 0.5s;
+}
+
+.loc_txt.active-hover {
+    color: #7e5c38;
+    transform: translate(-50%, -50%);
+    /* 살짝 위로 뜨게함 */
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+
+/* 4. 팝업 영역 스타일 */
+.popup_area {
+    display: none;
+    /* 처음에 안보이게 숨김 */
+    width: 454px;
+    /* 팝업너비 */
+    position: relative;
+    /* 팝업 등장 애니메이션 */
+    animation: fadeIn 0.5s ease-out;
+
+}
+
+/* 팝업이미지 */
+#popup_img {
+    width: 100%;
+    display: block;
+}
+
+
+/* 닫기버튼 */
+.close_btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* 애니메이션 효과 정의 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* 공통 텍스트 스타일 */
+.loc_txt {
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    font-family: 'DaeguDongseongRo';
+    transform: translate(-50%, -50%);
+    /* cursor: default; */
+}
+
+
+/* 각 지역별 위치 좌표 */
+.loc_kijang {
+    top: 120px;
+    right: 140px;
+}
+
+.loc_geumjeong {
+    top: 180px;
+    right: 280px;
+}
+
+.loc_buk {
+    top: 230px;
+    left: 330px;
+}
+
+.loc_dongnae {
+    top: 255px;
+    left: 405px;
+}
+
+.loc_haeundae {
+    top: 290px;
+    right: 170px;
+}
+
+.loc_yeonje {
+    top: 295px;
+    right: 275px;
+}
+
+.loc_suyeong {
+    top: 320px;
+    right: 250px;
+}
+
+.loc_busanjin {
+    top: 320px;
+    left: 360px;
+}
+
+.loc_sasang {
+    bottom: 150px;
+    left: 290px;
+}
+
+.loc_gangseo {
+    bottom: 150px;
+    left: 200px;
+}
+
+.loc_dong {
+    bottom: 105px;
+    left: 360px;
+}
+
+.loc_seo {
+    bottom: 85px;
+    left: 315px;
+}
+
+.loc_jung {
+    bottom: 65px;
+    left: 350px;
+}
+
+.loc_nam {
+    bottom: 100px;
+    right: 290px;
+}
+
+.loc_saha {
+    bottom: 50px;
+    left: 270px;
+}
+
+.loc_yeongdo {
+    bottom: 20px;
+    right: 310px;
+}
+
+
+
+
+/* 탭 배너 스타일 시작 */
+
+#info_banner_section {
+    width: 100%;
+    margin-top: 100px;
+    /* 지도 섹션과 간격 띄우기 */
+    margin-bottom: 0;
+}
+
+.inner_info {
+    width: 100%;
+    /* 전체 레이아웃 너비와 통일 */
+    margin: 0 auto;
+    position: relative;
+    /* 버튼을 이미지 위에 올리기 위한 기준점 */
+}
+
+/* 이미지 스타일 */
+.info_imgs {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+/* 모든 이미지 일단 숨김 */
+.ib_img {
+    width: 100%;
+    display: none;
+    vertical-align: top;
+}
+
+.ib_img.active {
+    display: block;
+    /* active클래스 있으면 보임 */
+}
+
+/* 탭 버튼 그룹 위치(오른쪽 상단배치) */
+.info_tab_btns {
+    position: absolute;
+    top: 30px;
+    right: 300px;
+    display: flex;
+    gap: 40px;
+    z-index: 10;
+    /* 이미지보다 위에 오게 설정 */
+}
+
+/* 탭 버튼 디자인 */
+.tab_btn {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #D08E4A;
+    /* 라운드선 컬러 */
+    border-radius: 40px;
+    /* 둥근 버튼 */
+
+    color: #8E6D46;
+    /* 글자컬러 */
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Paperozi', sans-serif;
+    cursor: pointer;
+}
+
+/* 마우스 올렸을 때 & 활성화 되었을 때 */
+.tab_btn:hover,
+.tab_btn.active {
+    background-color: #D08E4A;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+
+
+
+/* 댕부산pick 인스타 섹션 스타일 */
+
+#insta_section {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #F9F5EC;
+
+}
+
+.inner_insta {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+
+/* 1. 타이틀 영역 */
+.insta_title_box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    height: 120px;
+    width: 100%;
+}
+
+.title_txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* position: relative; */
+    z-index: 1;
+}
+
+.title_txt h3 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Paperozi';
+    margin-bottom: 20px;
+    /* 제목과 부제목 사이 간격 */
+
+    width: 100%;
+
+}
+
+.title_txt p {
+    font-size: 20px;
+    color: #D08E4A;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* 캐릭터 이미지 */
+.title_char {
+    width: 250px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(180px, -60%);
+
+}
+
+
+/* 새로 추가된 인스타 바로가기 링크 스타일 */
+
+.insta_link_wrap {
+    position: absolute;
+    right: 0; /* 우측 피드 영역 라인에 맞게 끝으로 정렬 */
+    bottom: -30px; 
+    display: flex;
+    align-items: center;
+    gap: 5px; /* 글자와 화살표 사이 간격 */
+}
+
+.insta_link_wrap .link_txt {
+    font-size: 16px; /* 요청하신 15px */
+    color: #111111; /* 요청하신 컬러 */
+    font-weight: 500; /* Regular */
+    font-family: 'Paperozi', sans-serif;
+}
+
+.insta_link_wrap .link_arrow_btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* 마우스 올리면 손가락 포인터로 변경 */
+    transition: transform 0.3s ease; /* 커질 때 자연스럽게 애니메이션 처리 */
+}
+
+/* 화살표에 마우스 올렸을 때 살짝 커지는 효과 */
+.insta_link_wrap .link_arrow_btn:hover {
+    transform: scale(1.5); /* 1.3배 확대 */
+}
+
+/* 2. 컨텐츠 배치 (좌:버튼 / 우: 이미지) */
+#insta_content_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* 상단정렬 */
+
+    gap: 80px;
+    width: 100%;
+}
+
+/* 왼쪽 버튼 리스트 */
+.hashtag_list {
+    display: flex;
+    flex-direction: column;
+    /* 세로 나열 */
+    gap: 30px;
+    width: 170px;
+    flex-shrink: 0;
+
+}
+
+.hash_btn {
+    padding: 10px 10px;
+    background-color: #fff;
+    border: 1.7px solid #333;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    cursor: pointer;
+    font-family: 'Paperozi', sans-serif;
+    text-align: center;
+    display: block;
+    /* 블록 요소로 변경하여 꽉차게 */
+    width: 100%;
+    /* 부모 너비 (200px)에 맞춤 */
+    box-sizing: border-box;
+}
+
+/* 버튼 호버 및 활성화 상태 */
+.hash_btn:hover,
+.hash_btn.active {
+    background-color: #D08E4A;
+    border-color: #D08E4A;
+    color: #fff;
+    transform: translate(-5px, -5px);
+    transition: all 0.5s;
+}
+
+/* 오른쪽 피드 영역 */
+#feed_display_area {
+    width: 1100px;
+}
+
+/* 피드그룹 (기본숨김) */
+.feed_group {
+    display: none;
+    justify-content: space-between;
+    gap: 5px;
+    width: 100%;
+}
+
+
+/* 활성화된 그룹만 보임 (flex로 설정해서 가로 정렬 유지) */
+.feed_group.active {
+    display: flex;
+}
+
+.feed_group img {
+    width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+#text_flow_section {
+    width: 100%;
+
+    /* 섹션 높이를 이미지 높이에 맞춰 적절히 설정 */
+    height: 250px;
+
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+
+    margin-top: 0;
+}
+
+/* 움직이는 트랙 */
+.flow_track {
+    display: flex;
+    width: fit-content;
+    /* 속도조절 : 30s를 숫자를 늘리면 느려지고, 줄이면 빨라짐 */
+    animation: flowAni 10s linear infinite;
+}
+
+/* 그룹단위 */
+.flow_group {
+    display: flex;
+    flex-shrink: 0;
+    /* 줄어들지않게 고정 */
+}
+
+/* 중요!! 통 이미지 스타일 설정 */
+.flow_group img {
+    height: 100%;
+    width: auto;
+    display: block;
+
+    /* 이미지 연결 부위의 미세한 틈 없애기 */
+    margin-right: -1px;
+}
+
+/* 흐르는 애니메이션 정의 (그대로유지) */
+@keyframes flowAni {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+        /* 정확히 절반 이동 후 리셋 */
+    }
+}
+
+
+
+
+/* footer 시작 */
+
+#footer {
+    width: 100%;
+    /* 배경 그라데이션 */
+    background: linear-gradient(to bottom, #fff 0%, #FFE2A5 100%);
+    padding-top: 120px;
+    /* padding-bottom은 f_bottom_box에서 처리 */
+}
+
+.inner_footer {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+
+
+/* 상단박스 */
+.f_top_box {
+    display: flex;
+    justify-content: space-between;
+    /* 양 끝 정렬 */
+    align-items: center;
+    /* 세로중앙정렬 */
+    padding-bottom: 40px;
+    /* 하단 선과의 간격 */
+}
+
+
+/* 왼쪽 로고 */
+.f_logo img {
+    width: 120px;
+    /* 로고 크기 조절 */
+    display: block;
+}
+
+/* 가운데 회사 정보 */
+.f_info {
+    flex-grow: 1;
+    /* 남는 공간 차지 */
+    padding-left: 90px;
+    /* 로고와의 간격 */
+    text-align: left;
+}
+
+.f_info p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2.5;
+    /* 줄간격 */
+    color: #333;
+    font-family: 'Paperozi', sans-serif;
+}
+
+.f_info span {
+    font-weight: 800;
+    margin-right: 5px;
+    color: #111;
+}
+
+/* 오른쪽 Contact & sns */
+
+.f_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* 오른쪽정렬 */
+    gap: 35px;
+}
+
+
+.fc_txt {
+    text-align: right;
+    font-family: 'Paperozi', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* 두 텍스트 사이 간격 주기 */
+.fc_txt p {
+    margin-bottom: 25px;
+}
+
+.fc_txt p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+/* 아이콘3개 */
+
+.fc_icons {
+    display: flex;
+    gap: 20px;
+}
+
+.fc_icons img {
+    width: 40px;
+    /* 아이콘 크기 */
+    display: block;
+}
+
+/* 하단 박스(카피라이트+상단실선) */
+.f_bottom_box {
+    /* border-top: 1px solid #a4998e;
+    padding: 30px 0 50px; /* 위30, 아래 50 */
+    /* text-align: center; */
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 0 30px;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #555;
+    font-family: 'Paperozi', sans-serif;
+    letter-spacing: 0;
+}

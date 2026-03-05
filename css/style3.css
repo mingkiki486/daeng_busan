@@ -1,0 +1,760 @@
+@charset "utf-8";
+/* webfont */
+
+@font-face {
+    font-family: 'DaeguDongseongRo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2511-1@1.0/DaeguDongseongro-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DaeguDongseongRo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2511-1@1.0/DaeguDongseongro-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-1Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-2ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-3Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+
+
+/* 웹폰트없으면 지우세요!!! */
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+em,
+img,
+small,
+strong,
+b,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+section,
+summary,
+video,
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    /* Prevent font scaling in landscape */
+
+    -webkit-text-size-adjust: none;
+    /*Chrome, Safari, newer versions of Opera*/
+
+    -moz-text-size-adjust: none;
+    /*Firefox*/
+
+    -ms-text-size-adjust: none;
+    /*Ie*/
+
+    -o-text-size-adjust: none;
+    /*old versions of Opera*/
+}
+
+body {
+    font-family: 'Paperozi';
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #111;
+}
+
+#wrap {
+    min-width: 1360px;
+}
+
+/* haeder */
+#header {
+    /* header스크롤시 고정하고싶음 */
+    position: sticky;
+    /* 스크롤 내릴 때 화면에 고정 */
+    top: 0;
+    /* 화면 맨 위 위치에 고정 */
+    z-index: 999;
+    /* 다른 이미지나 콘텐츠보다 항상 맨 위에 오도록 설정 */
+
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(17, 17, 17, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.inner_header {
+    display: flex;
+    width: 1320px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 100%;
+}
+
+.gnb {
+    display: flex;
+    gap: 100px;
+}
+
+.logo img {
+    display: block;
+}
+
+.gnb1 {
+    display: flex;
+    gap: 100px;
+}
+
+
+/* 메인배너이미지 */
+#mainbanner img {
+    display: block;
+    width: 100%;
+}
+
+
+
+
+
+/* =========================================
+   댕스테이 소개 영역 (Subpage Intro)
+========================================= */
+#daengstay_intro {
+    width: 100%;
+    height: 665px;
+    background-color: #F9F5EC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner_intro {
+    width: 1320px;
+    /* 헤더의 inner_header와 동일한 기준 너비 유지 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+    /* 왼쪽 캐릭터와 오른쪽 텍스트 사이의 간격 */
+}
+
+/* 왼쪽 캐릭터 이미지 */
+.intro_left img {
+    display: block;
+    max-width: 100%;
+}
+
+/* 오른쪽 텍스트 영역 */
+.intro_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 텍스트와 아이콘들을 가운데 정렬 */
+    text-align: center;
+}
+
+/* 타이틀과 아이콘 묶음 */
+.title_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* 아이콘과 "댕스테이" 글자 사이 간격 */
+    margin-bottom: 25px;
+    /* 아래 부제목(h3)과의 간격 */
+}
+
+/* 타이틀 글자 */
+.title_wrap h2 {
+    font-weight: 700;
+    /* 7Bold */
+    font-size: 45px;
+    color: #D08E4A;
+}
+
+/* 아이콘 1 (캐리어) */
+.title_wrap .icon1 {
+    width: 90px;
+    height: 130px;
+    object-fit: contain;
+    /* 이미지 비율 찌그러짐 방지 */
+    margin-bottom: 30px;
+    /* 시안처럼 캐리어가 살짝 위로 떠 보이게 마진 추가 */
+}
+
+/* 아이콘 2 (위치 마커) */
+.title_wrap .icon2 {
+    width: 110px;
+    height: 117px;
+    object-fit: contain;
+}
+
+/* 부제목 */
+.intro_right h3 {
+    font-weight: 500;
+    /* 5Medium */
+    font-size: 30px;
+    color: #111111;
+    margin-bottom: 40px;
+    /* 아래 설명글(p)과의 간격 */
+}
+
+/* 설명글 */
+.intro_right p {
+    font-weight: 500;
+    /* 5Medium */
+    font-size: 25px;
+    line-height: 50px;
+    /* 행간 */
+    color: #111111;
+}
+
+
+
+
+/* =========================================
+   한눈에 보는 스테이가이드 영역
+========================================= */
+#stayguide_wrap {
+    width: 100%;
+    margin-top: 175px;
+    /* 이전 배경 영역으로부터 175px 띄움 */
+    margin-bottom: 100px;
+    /* 아래쪽 여유 공간 (필요시 조절) */
+    display: flex;
+    justify-content: center;
+}
+
+.inner_guide {
+    width: 1320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 타이틀 스타일 */
+.guide_title {
+    margin-bottom: 60px;
+    /* 타이틀과 사진 사이 간격 */
+    text-align: center;
+}
+
+.guide_title h2 {
+    font-weight: 700;
+    /* 7Bold */
+    font-size: 45px;
+    color: #111111;
+}
+
+.guide_title h2 span {
+    font-weight: 700;
+    /* 7Bold */
+    color: #D08E4A;
+}
+
+/* 갤러리 전체 컨테이너 (좌 - 중앙그리드 - 우) 배치 */
+.guide_gallery {
+    display: flex;
+    align-items: center;
+    /* 양옆 이미지를 가운데 높이에 맞춤 */
+    justify-content: center;
+    gap: 20px;
+    /* 구역 사이 간격 */
+    width: 100%;
+}
+
+/* 가운데 그리드 영역 */
+.middle_grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 779px;
+    gap: 20px;
+}
+
+/* 각 아이템이 그리드 칸을 차지하는 비율 설정 */
+.item_resort {
+    grid-column: 1 / 3;
+}
+
+/* 리조트는 1~2열 차지 */
+.item_camping {
+    grid-column: 3 / 4;
+}
+
+/* 캠핑은 3열 차지 */
+.item_caravan {
+    grid-column: 1 / 2;
+}
+
+.item_pension {
+    grid-column: 2 / 3;
+}
+
+.item_poolvilla {
+    grid-column: 3 / 4;
+}
+
+/* 양옆 세로형 이미지 너비 고정 */
+.item_glamping,
+.item_hotel {
+    width: 220px;
+    /* 시안 비율에 맞춘 너비 (조절 가능) */
+    flex-shrink: 0;
+}
+
+
+/* --- 개별 사진 박스 공통 속성 및 호버 효과 --- */
+.guide_item {
+    display: block;
+    position: relative;
+    /* 글자(absolute)의 기준점 역할 */
+    overflow: hidden;
+    /* 이미지가 커질 때 박스 밖으로 나가지 않게 자름 */
+}
+
+.guide_item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    /* 부드럽게 커지는 효과 시간 */
+}
+
+.guide_item:hover img {
+    transform: scale(1.05);
+    /* 마우스 올렸을 때 살짝 커짐 */
+}
+
+/* --- 이미지 위 글자 공통 스타일 --- */
+.guide_item p {
+    position: absolute;
+    font-weight: 700;
+    font-size: 30px;
+    color: #FFFFFF;
+    z-index: 10;
+    /* 흰 글씨가 밝은 사진에서도 잘 보이도록 아주 연한 그림자 추가 */
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* 글자 위치별 클래스 (시안에 맞게 각각 적용해둠) */
+.txt_bl {
+    bottom: 20px;
+    left: 20px;
+}
+
+/* Bottom Left */
+.txt_tr {
+    top: 20px;
+    right: 20px;
+}
+
+/* Top Right */
+.txt_br {
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Bottom Right */
+.txt_tl {
+    top: 20px;
+    left: 20px;
+}
+
+/* Top Left */
+
+
+
+
+
+
+/* =========================================
+   장기한달살기 영역 (Long Stay)
+========================================= */
+#longstay_wrap {
+    width: 100%;
+    height: 965px;
+    /* 지정 높이 */
+    background-color: #F9F5EC;
+    /* 배경색 */
+    margin-top: 250px;
+    /* 바로 위 이미지로부터 280px 간격 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner_longstay {
+    width: 1320px;
+    height: 100%;
+    display: flex;
+    /* 왼쪽 영역과 오른쪽 영역 사이의 간격 570px 적용 */
+    justify-content: center;
+    gap: 300px;
+}
+
+/* --- 왼쪽 영역 스타일 --- */
+.longstay_left {
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* 왼쪽 정렬 */
+}
+
+/* 둥근 제목 박스 */
+.title_box {
+    width: 300px;
+    height: 68px;
+    background-color: #D08E4A;
+    border-radius: 34px;
+    /* 높이의 절반값으로 완전 둥글게 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    /* 7Bold (시안 느낌에 맞춰 설정) */
+    font-size: 40px;
+    /* 텍스트 크기 임의 설정 (조절 가능) */
+    color: #ffffff;
+}
+
+/* 캐릭터 이미지 */
+.char2 {
+    width: 215px;
+    height: 254px;
+    margin-top: 70px;
+    /* 제목 박스로부터 70px 아래 */
+    object-fit: contain;
+}
+
+/* 메인 텍스트 그룹 */
+.text_group {
+    margin-top: 45px;
+    /* 이미지로부터 45px 아래 */
+    text-align: center;
+}
+
+.desc_main_sub {
+    font-weight: 500;
+    /* 5Medium */
+    font-size: 30px;
+    color: #111111;
+    margin-bottom: 10px;
+    /* 아래 큰 글씨와의 간격 */
+
+}
+
+.desc_main {
+    font-weight: 500;
+    /* 5Medium */
+    font-size: 40px;
+    color: #111111;
+}
+
+/* 서브 설명 텍스트 */
+.desc_sub {
+    margin-top: 60px;
+    /* 위 텍스트 뭉치로부터 60px 아래 */
+    font-weight: 400;
+    /* 4Regular */
+    font-size: 20px;
+    line-height: 30px;
+    /* 행간 */
+    color: #111111;
+    text-align: center;
+}
+
+
+/* --- 오른쪽 영역 (자동 스크롤 갤러리) --- */
+.longstay_right {
+    width: 450px;
+    /* 이미지 가로 사이즈 */
+    height: 100%;
+    /* 수직 가운데 정렬 */
+    /* padding: 100px 0; */
+    box-sizing: border-box;
+}
+
+/* 갤러리 트랙 */
+.gallery_item {
+    height: 300px !important;
+    overflow: hidden;
+    /* 25초 동안 부드럽게(linear) 무한반복(infinite) 되는 애니메이션 적용 */
+}
+
+/* 개별 이미지 아이템 */
+.gallery_item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery_item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+/* 호버 시 나타날 텍스트와 배경 기본 설정 (평소에는 숨김 상태) */
+.gallery_item .hover_text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* 글씨가 잘 보이도록 어두운 반투명 배경 추가 */
+    color: #fff; /* 흰색 글씨 */
+    font-size: 24px; 
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* 평소에는 투명해서 안 보임 */
+}
+
+/* 마우스를 올렸을 때 텍스트가 나타나게 처리 */
+.gallery_item a:hover .hover_text {
+    opacity: 1;
+}
+
+.gallery_item a:hover img {
+    cursor: pointer;
+
+}
+
+
+
+
+/* footer 시작 */
+
+#footer {
+    width: 100%;
+    /* 배경 그라데이션 */
+    background: linear-gradient(to bottom, #fff 0%, #FFE2A5 100%);
+    padding-top: 120px;
+    /* padding-bottom은 f_bottom_box에서 처리 */
+}
+
+.inner_footer {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+
+
+/* 상단박스 */
+.f_top_box {
+    display: flex;
+    justify-content: space-between;
+    /* 양 끝 정렬 */
+    align-items: center;
+    /* 세로중앙정렬 */
+    padding-bottom: 40px;
+    /* 하단 선과의 간격 */
+}
+
+
+/* 왼쪽 로고 */
+.f_logo img {
+    width: 120px;
+    /* 로고 크기 조절 */
+    display: block;
+}
+
+/* 가운데 회사 정보 */
+.f_info {
+    flex-grow: 1;
+    /* 남는 공간 차지 */
+    padding-left: 90px;
+    /* 로고와의 간격 */
+    text-align: left;
+}
+
+.f_info p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2.5;
+    /* 줄간격 */
+    color: #333;
+    font-family: 'Paperozi', sans-serif;
+}
+
+.f_info span {
+    font-weight: 800;
+    margin-right: 5px;
+    color: #111;
+}
+
+/* 오른쪽 Contact & sns */
+
+.f_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* 오른쪽정렬 */
+    gap: 35px;
+}
+
+
+.fc_txt {
+    text-align: right;
+    font-family: 'Paperozi', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* 두 텍스트 사이 간격 주기 */
+.fc_txt p {
+    margin-bottom: 25px;
+}
+
+.fc_txt p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+/* 아이콘3개 */
+
+.fc_icons {
+    display: flex;
+    gap: 20px;
+}
+
+.fc_icons img {
+    width: 40px;
+    /* 아이콘 크기 */
+    display: block;
+}
+
+/* 하단 박스(카피라이트+상단실선) */
+.f_bottom_box {
+    /* border-top: 1px solid #a4998e;
+    padding: 30px 0 50px; /* 위30, 아래 50 */
+    /* text-align: center; */
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 0 30px;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #555;
+    font-family: 'Paperozi', sans-serif;
+    letter-spacing: 0;
+}

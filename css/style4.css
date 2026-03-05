@@ -1,0 +1,825 @@
+@charset "utf-8";
+/* webfont */
+
+@font-face {
+    font-family: 'DaeguDongseongRo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2511-1@1.0/DaeguDongseongro-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DaeguDongseongRo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2511-1@1.0/DaeguDongseongro-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-1Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-2ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-3Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+
+
+/* 웹폰트없으면 지우세요!!! */
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+em,
+img,
+small,
+strong,
+b,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+section,
+summary,
+video,
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    /* Prevent font scaling in landscape */
+
+    -webkit-text-size-adjust: none;
+    /*Chrome, Safari, newer versions of Opera*/
+
+    -moz-text-size-adjust: none;
+    /*Firefox*/
+
+    -ms-text-size-adjust: none;
+    /*Ie*/
+
+    -o-text-size-adjust: none;
+    /*old versions of Opera*/
+}
+
+body {
+    font-family: 'Paperozi';
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #111;
+}
+
+#wrap {
+    min-width: 1360px;
+}
+
+/* haeder */
+#header {
+    /* header스크롤시 고정하고싶음 */
+    position: sticky;
+    /* 스크롤 내릴 때 화면에 고정 */
+    top: 0;
+    /* 화면 맨 위 위치에 고정 */
+    z-index: 999;
+    /* 다른 이미지나 콘텐츠보다 항상 맨 위에 오도록 설정 */
+
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(17, 17, 17, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.inner_header {
+    display: flex;
+    width: 1320px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 100%;
+}
+
+.gnb {
+    display: flex;
+    gap: 100px;
+}
+
+.logo img {
+    display: block;
+}
+
+.gnb1 {
+    display: flex;
+    gap: 100px;
+}
+
+
+/* 메인배너이미지 */
+#mainbanner img {
+    display: block;
+    width: 100%;
+}
+
+
+
+/* =========================================
+   서브4 (브랜드 소개) 메인 콘텐츠 영역
+========================================= */
+
+/* 1 & 2. 메인배너 텍스트 얹기 */
+#mainbanner {
+    position: relative;
+    /* 이미지가 기준점이 되도록 설정 */
+}
+
+#mainbanner .banner_txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 15%);
+    /* 수직, 수평 정중앙 정렬 */
+    text-align: center;
+    width: 100%;
+}
+
+#mainbanner .banner_txt h2 {
+    font-family: 'Paperozi', sans-serif;
+    font-weight: 700;
+    /* 7Bold */
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    /* 살짝 바깥쪽 그림자 */
+    margin-bottom: 25px;
+    /* 아래 텍스트와의 간격 25px */
+}
+
+#mainbanner .banner_txt p {
+    font-family: 'Paperozi', sans-serif;
+    font-weight: 500;
+    /* 5Medium */
+    font-size: 30px;
+    color: #ffffff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    /* 살짝 바깥쪽 그림자 */
+}
+
+
+/* 3. 브랜드 스토리 영역 (메인배너 아래로 160px 띄우기) */
+#brand_story {
+    padding-top: 160px;
+    width: 100%;
+}
+
+.inner_brand {
+    width: 1320px;
+    /* 헤더, 푸터와 이너 너비 통일 */
+    margin: 0 auto;
+}
+
+.sec_title {
+    font-family: 'Paperozi', sans-serif;
+    font-weight: 700;
+    /* 7Bold */
+    font-size: 50px;
+    color: #111111;
+    text-align: center;
+    /* 타이틀 중앙 정렬 */
+    margin-bottom: 100px;
+    /* 이미지 영역과의 간격 100px */
+}
+
+
+/* 4 & 5. 강아지 이미지와 텍스트 좌우 배치 */
+.story_con {
+    display: flex;
+    justify-content: center;
+    /* 컨텐츠 묶음을 가운데 정렬 */
+    align-items: center;
+    /* 이미지와 텍스트의 세로 중앙 정렬 */
+    gap: 48px;
+    /* 이미지와 텍스트 사이 간격 48px */
+}
+
+.story_con img {
+    width: 620px;
+    height: 484px;
+    object-fit: cover;
+    /* 이미지가 비율에 맞게 잘리도록 설정 */
+    border-radius: 30px;
+    /* 시안처럼 둥근 모서리 적용 */
+}
+
+.story_txt {
+    text-align: left;
+    /* 왼쪽 정렬 */
+}
+
+.story_txt p {
+    font-family: 'Paperozi', sans-serif;
+    font-weight: 400;
+    /* 4Regular */
+    font-size: 25px;
+    color: #111111;
+    line-height: 1.6;
+    /* 줄간격을 조금 주어 가독성 확보 */
+    margin-bottom: 35px;
+    /* 문단(p) 사이의 여백 (자연스럽게 떨어뜨림) */
+}
+
+.story_txt p:last-child {
+    margin-bottom: 0;
+    /* 마지막 문단은 아래 여백 제거 */
+}
+
+
+
+
+/* =========================================
+   로고 & 캐릭터 영역
+========================================= */
+
+#logo_character {
+    margin-top: 190px;
+    /* 이전 섹션(이미지)으로부터 190px 간격 */
+    width: 100%;
+}
+
+.inner_lc {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 내부 박스들을 가운데 정렬 */
+}
+
+/* 1. 타이틀 */
+.lc_title {
+    font-family: 'Paperozi', sans-serif;
+    font-weight: 700;
+    /* 7Bold */
+    font-size: 50px;
+    color: #111111;
+    text-align: center;
+    margin-bottom: 75px;
+    /* 아래 백그라운드 박스와의 간격 75px */
+}
+
+/* 2. 첫 번째 백그라운드 박스 (로고) */
+.lc_box1 {
+    width: 1051px;
+    height: 565px;
+    background-color: #F9F5EC;
+    border-radius: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 50px;
+    /* 3. 위에서부터 50px 간격 */
+    margin-bottom: 75px;
+    /* 6. 두 번째 박스와의 간격 75px */
+}
+
+/* 3. 로고 이미지 배치 */
+.logo_images {
+    display: flex;
+    gap: 150px;
+    /* 로고 사이 간격 150px */
+    justify-content: center;
+    margin-bottom: 55px;
+    /* 4. 아래 텍스트와의 간격 38px */
+}
+
+.logo_images img {
+    display: block;
+}
+
+/* 4. 슬로건 텍스트 */
+.lc_slogan {
+    font-family: 'Paperozi', sans-serif;
+    font-weight: 600;
+    /* 6 SemiBold */
+    font-size: 40px;
+    color: #D08E4A;
+    text-align: center;
+    margin-bottom: 30px;
+    /* 5. 아래 설명 텍스트와의 간격 30px */
+}
+
+/* 5. 첫 번째 박스 설명 텍스트 */
+.lc_desc1 {
+    font-family: 'Paperozi', sans-serif;
+    font-weight: 300;
+    /* 3 Light */
+    font-size: 20px;
+    line-height: 30px;
+    /* 행간 30px */
+    color: #111111;
+    text-align: center;
+}
+
+/* 6. 두 번째 백그라운드 박스 (캐릭터) */
+.lc_box2 {
+    width: 1051px;
+    height: 405px;
+    background-color: #F9F5EC;
+    border-radius: 70px;
+    display: flex;
+    justify-content: center;
+    /* 가로 가운데 정렬 */
+    box-sizing: border-box;
+    padding-top: 40px;
+    /* 7. 위에서부터 40px 간격 */
+}
+
+/* 7. 이미지와 텍스트를 나란히 배치하기 위한 래퍼 */
+.char_wrap {
+    display: flex;
+    /* align-items: center; 를 넣으면 이미지가 수직 중앙으로 이동하므로 생략하여 위에서 40px 유지 */
+}
+
+/* 7 & 8. 3D 캐릭터 이미지 */
+.char_img {
+    width: 216px;
+    height: 317px;
+    display: block;
+    margin-right: 77px;
+    /* 오른쪽 텍스트와의 간격 77px */
+}
+
+/* 시안에 맞게 텍스트 중앙 정렬 설정 */
+.char_txt {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 텍스트 묶음을 이미지 높이에 맞춰 세로 중앙 정렬 */
+}
+
+/* 8. 캐릭터 강조 텍스트 */
+.char_strong {
+    font-family: 'Paperozi', sans-serif;
+    font-weight: 600;
+    /* 6 SemiBold */
+    font-size: 20px;
+    line-height: 40px;
+    /* 행간 40px */
+    color: #111111;
+}
+
+/* 9. 캐릭터 설명 텍스트 */
+.char_desc {
+    font-family: 'Paperozi', sans-serif;
+    font-weight: 300;
+    /* 3 Light */
+    font-size: 20px;
+    line-height: 40px;
+    /* 행간 40px */
+    color: #111111;
+}
+
+
+/* =========================================
+   굿즈 소개 (흐르는 이미지) 영역
+========================================= */
+
+/* 1. 배경 설정 (가로 최대로 잡고 넘치는 요소 숨김) */
+#merch_section {
+    width: 100%;
+    max-width: 1920px;
+    /* 전체 배경 가로 1920px 기준 */
+    height: 560px;
+    background-color: #FFE2A5;
+    margin: 150px auto 0;
+    /* 윗단락과의 여백 150px 및 가운데 정렬 */
+    overflow: hidden;
+    /* 흐르는 이미지가 영역 밖으로 나가는 것을 숨김 */
+}
+
+.inner_merch {
+    width: 1320px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    /* 텍스트와 흐르는 이미지를 좌우로 배치 */
+    align-items: flex-start;
+    gap: 100px;
+    justify-content: center;
+}
+
+/* 텍스트 박스 전체 설정 */
+.merch_txt_box {
+    padding-top: 122px;
+    /* 위에서부터 122px 간격 */
+    flex-shrink: 0;
+    /* 텍스트 박스 사이즈 고정 */
+}
+
+/* 2. 타이틀 박스 설정 */
+.merch_title {
+    width: 235px;
+    height: 55px;
+    background-color: #D08E4A;
+    color: #ffffff;
+    font-family: 'Paperozi', sans-serif;
+    font-weight: 700;
+    /* 7Bold */
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    /* 텍스트 가로 중앙 정렬 */
+    align-items: center;
+    /* 텍스트 세로 중앙 정렬 */
+    margin-bottom: 60px;
+    /* 아래 텍스트와의 간격 60px */
+}
+
+/* 3. 첫 번째 설명 텍스트 */
+.merch_desc1 {
+    font-family: 'Paperozi', sans-serif;
+    font-weight: 400;
+    /* 4Regular */
+    font-size: 20px;
+    line-height: 30px;
+    /* 행간 30px */
+    color: #111111;
+    text-align: left;
+    margin-bottom: 47px;
+    /* 아래 텍스트와의 간격 47px */
+}
+
+/* 4. 두 번째 설명 텍스트 */
+.merch_desc2 {
+    font-family: 'Paperozi', sans-serif;
+    font-weight: 400;
+    /* 4Regular */
+    font-size: 20px;
+    line-height: 30px;
+    /* 행간 30px */
+    color: #111111;
+    text-align: left;
+}
+
+.swiper-container-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    height: 560px;
+    /* 고정 높이 */
+    overflow: hidden;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+/* ★ 핵심: 멈춤 현상 제거를 위한 CSS 강제 설정 ★ */
+.swiper-wrapper {
+    /* 등속 운동을 위해 linear로 고정 */
+    transition-timing-function: linear !important;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* =========================================
+   제휴 및 입점 문의 영역
+========================================= */
+#partnership_section {
+    width: 100%;
+    margin-top: 150px;
+    /* 위 굿즈 섹션과의 여백 (필요에 따라 조절) */
+}
+
+.inner_partnership {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 동그란 아이콘 3개 묶음 */
+.partner_list {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    /* 동그란 이미지들 사이의 간격 */
+    width: 100%;
+}
+
+/* 개별 아이콘 항목 (a 태그) */
+.partner_item {
+    display: block;
+    position: relative;
+    /* 글자를 이미지 위에 올리기 위한 기준점 */
+    /* transition: transform 0.3s ease; 마우스 올렸을 때 부드러운 움직임 */
+}
+
+/* 마우스 호버 시 살짝 위로 떠오르는 효과 (선택사항) */
+.partner_item:hover {
+    transform: translateY(-10px);
+}
+
+.partner_item img {
+    display: block;
+    width: 360px;
+    /* 시안에 맞춘 동그라미 이미지 너비 (필요시 조절) */
+    height: auto;
+}
+
+/* 이미지 위에 올라가는 텍스트 */
+.partner_item p {
+    position: absolute;
+    /* 동그란 이미지 내부 여백에 맞춰 글자 높낮이 조절 (bottom 퍼센트를 조절하세요) */
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* 정확히 가운데 정렬 */
+
+    /* 요청하신 폰트 스타일 */
+    font-family: 'Paperozi', sans-serif;
+    font-weight: 500;
+    /* 5Medium */
+    font-size: 35px;
+    color: #7E5C38;
+
+    white-space: nowrap;
+    /* 글자가 줄바꿈 되지 않도록 설정 */
+}
+
+/* 2. 하단 가로 배너 영역 */
+.partner_banner {
+    margin-top: 90px;
+    width: 100%;
+    /* 버튼 텍스트의 위치 기준점이 됨 */
+    position: relative;
+}
+
+.partner_banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* 3. '무료 입점신청하기 >' 텍스트 버튼 스타일 */
+.partner_banner .apply_btn {
+    position: absolute;
+    top: 77%;
+    /* 위에서부터의 위치 (시안에 맞춰 조절 가능) */
+    left: 8%;
+    /* 왼쪽에서부터의 위치 (문구 시작선과 정렬) */
+
+    font-family: 'Paperozi', sans-serif;
+    font-weight: 500;
+    /* 5Medium */
+    font-size: 26px;
+    /* 텍스트 크기 */
+    color: #ffffff;
+    /* 흰색 글씨 */
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+/* 텍스트 위에 마우스를 올렸을 때 클릭 유도를 위해 살짝 투명해지는 효과 */
+.partner_banner .apply_btn:hover {
+    color: #7E5C38;
+    /* opacity: 0.8; */
+}
+
+
+/* footer 시작 */
+
+#footer {
+    width: 100%;
+    /* 배경 그라데이션 */
+    background: linear-gradient(to bottom, #fff 0%, #FFE2A5 100%);
+    padding-top: 120px;
+    /* padding-bottom은 f_bottom_box에서 처리 */
+}
+
+.inner_footer {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+
+
+/* 상단박스 */
+.f_top_box {
+    display: flex;
+    justify-content: space-between;
+    /* 양 끝 정렬 */
+    align-items: center;
+    /* 세로중앙정렬 */
+    padding-bottom: 40px;
+    /* 하단 선과의 간격 */
+}
+
+
+/* 왼쪽 로고 */
+.f_logo img {
+    width: 120px;
+    /* 로고 크기 조절 */
+    display: block;
+}
+
+/* 가운데 회사 정보 */
+.f_info {
+    flex-grow: 1;
+    /* 남는 공간 차지 */
+    padding-left: 90px;
+    /* 로고와의 간격 */
+    text-align: left;
+}
+
+.f_info p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2.5;
+    /* 줄간격 */
+    color: #333;
+    font-family: 'Paperozi', sans-serif;
+}
+
+.f_info span {
+    font-weight: 800;
+    margin-right: 5px;
+    color: #111;
+}
+
+/* 오른쪽 Contact & sns */
+
+.f_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* 오른쪽정렬 */
+    gap: 35px;
+}
+
+
+.fc_txt {
+    text-align: right;
+    font-family: 'Paperozi', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* 두 텍스트 사이 간격 주기 */
+.fc_txt p {
+    margin-bottom: 25px;
+}
+
+.fc_txt p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+/* 아이콘3개 */
+
+.fc_icons {
+    display: flex;
+    gap: 20px;
+}
+
+.fc_icons img {
+    width: 40px;
+    /* 아이콘 크기 */
+    display: block;
+}
+
+/* 하단 박스(카피라이트+상단실선) */
+.f_bottom_box {
+    /* border-top: 1px solid #a4998e;
+    padding: 30px 0 50px; /* 위30, 아래 50 */
+    /* text-align: center; */
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 0 30px;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #555;
+    font-family: 'Paperozi', sans-serif;
+    letter-spacing: 0;
+}

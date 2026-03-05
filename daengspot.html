@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1360">
+    <!-- 브라우저 뷰포트 너비를 1360px로 고정하여 페이지를 그리도록 설정 -->
+    <title>댕부산</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/png">
+
+    <!-- webfont -->
+    <!-- font-family: 'Paperozi'; -->
+
+    <!-- AOS넣기,,,,,,,,,,, -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style1.css">
+
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="inner_header">
+                <ul class="gnb">
+                    <li><a href="brand.html">브랜드 소개</a></li>
+                    <li><a href="daengspot.html">댕스팟</a></li>
+                </ul>
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="./images/logo.svg" alt="댕부산로고">
+                    </a>
+                </h1>
+                <ul class="gnb1">
+                    <li><a href="daengplace.html">댕플레이스</a></li>
+                    <li><a href="daengstay.html">댕스테이</a></li>
+                </ul>
+            </div> <!-- inner_header -->
+        </div> <!-- header -->
+
+        <!-- mainbanner 이미지 -->
+        <div id="mainbanner">
+            <img src="./images/sub1_daengspot/mainbanner.png" class="mainbanner" alt="강아지배너">
+        </div>
+        <!-- mainbanner 끝 -->
+
+
+
+
+
+        <section id="daengspot_intro">
+            <div class="inner_intro">
+                <div class="intro_character" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="./images/sub1_daengspot/daengspotchar.png" alt="썬베드캐릭터">
+                </div> <!-- intro_character끝 -->
+
+                <div class="intro_text">
+                    <div class="intro_title_wrap" data-aos="fade-left" data-aos-duration="1000">
+
+                        <img src="./images/sub1_daengspot/3d_icon1.png" alt="해" class="intro_sun">
+
+                        <h2>" 댕스팟 "</h2>
+                        <img src="./images/sub1_daengspot/3d_icon2.png" alt="갈매기" class="intro_seagull"
+                            data-aos="fade-left" data-aos-duration="1000">
+
+                        <h3>댕부산이 정리한 강아지 동반 스팟</h3>
+                        <p>
+                            반려견과 함께 갈 수 있는 부산의 장소를 모았어요. <br>
+                            관광명소부터 산책코스, 자연스팟까지 한 번에 만나보세요.
+                        </p>
+                    </div> <!-- intro_title_wrap끝 -->
+
+
+
+                </div> <!-- intro_text끝 -->
+
+            </div> <!-- inner_intro끝 -->
+
+        </section> <!-- section끝 -->
+
+
+
+
+
+
+        <section class="daengspot_list">
+            <div class="inner_list">
+                <ul class="category_btns" data-aos="fade-down" data-aos-duration="800">
+                    <li class="active">
+                        <a href="#none" data-target="spot_tour">관광명소</a>
+                    </li>
+                    <li>
+                        <a href="#none" data-target="spot_walk">산책코스</a>
+                    </li>
+                    <li>
+                        <a href="#none" data-target="spot_nature">자연스팟</a>
+                    </li>
+                </ul>
+
+                <div id="spot_tour" class="slider_wrap" data-aos="fade-up" data-aos-duration="1000">
+                    <button class="slide_btn prev_btn">
+                        <svg viewBox="0 0 24 24" width="40" height="40">
+                            <circle cx="12" cy="12" r="11" fill="none" stroke="#111" stroke-width="2" />
+                            <path d="M14 7l-5 5 5 5" fill="none" stroke="#111" stroke-width="2" />
+                        </svg>
+                    </button>
+
+                    <div class="slider_viewport">
+                        <ul class="slide_track">
+                            <li class="card">
+                                <div class="card_img"><img src="./images/sub1_daengspot/img1.png" alt="해동 용궁사"></div>
+                                <div class="card_txt">
+                                    <h4>해동 용궁사</h4>
+                                    <p>바다를 품은 사찰로<br>부산에서 가장 특별한<br>해안 풍경을 만날 수 있는 명소</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="card_img"><img src="./images/sub1_daengspot/img2.png" alt="광안리 해수욕장"></div>
+                                <div class="card_txt">
+                                    <h4>광안리 해수욕장</h4>
+                                    <p>광안대교 뷰를 배경으로<br>산책하기 좋은 감성 스팟</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="card_img"><img src="./images/sub1_daengspot/img3.png" alt="이기대 해안산책로"></div>
+                                <div class="card_txt">
+                                    <h4>이기대 해안산책로</h4>
+                                    <p>자연 그대로의 바다와<br>절경이 이어지는 힐링 산책 코스<br>조용히 산책을 선호하는<br>반려견에게 추천</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="card_img"><img src="./images/sub1_daengspot/img4.png" alt="감천문화마을"></div>
+                                <div class="card_txt">
+                                    <h4>감천문화마을</h4>
+                                    <p>알록달록한 동네와<br>골목 골목이 매력적인 마을.<br>고양이와 천천히 걸으며<br>사진 찍기 좋아요.</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="card_img"><img src="./images/sub1_daengspot/img5.png" alt="흰여울문화마을"></div>
+                                <div class="card_txt">
+                                    <h4>흰여울문화마을</h4>
+                                    <p>바다 절벽 위 감성 골목<br>바다뷰 산책 가능</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="card_img"><img src="./images/sub1_daengspot/img6.png" alt="송도해상케이블카"></div>
+                                <div class="card_txt">
+                                    <h4>송도해상케이블카</h4>
+                                    <p>송도해수욕장<br>송도구름산책로</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="slide_btn next_btn">
+                        <svg viewBox="0 0 24 24" width="40" height="40">
+                            <circle cx="12" cy="12" r="11" fill="none" stroke="#111" stroke-width="2" />
+                            <path d="M10 7l5 5-5 5" fill="none" stroke="#111" stroke-width="2" />
+                        </svg>
+                    </button>
+                </div>
+                <div id="spot_walk" class="slider_wrap" style="display: none;">
+                    <button class="slide_btn prev_btn">
+                        <svg viewBox="0 0 24 24" width="40" height="40">
+                            <circle cx="12" cy="12" r="11" fill="none" stroke="#111" stroke-width="2" />
+                            <path d="M14 7l-5 5 5 5" fill="none" stroke="#111" stroke-width="2" />
+                        </svg>
+                    </button>
+
+                    <div class="slider_viewport">
+                        <ul class="slide_track">
+                            <li class="card">
+                                <div class="card_img"><img src="./images/sub1_daengspot/img1.png" alt="임시"></div>
+                                <div class="card_txt">
+                                    <h4>을숙도 생태공원</h4>
+                                    <p>나중에 내용 수정해주세요</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="card_img"><img src="./images/sub1_daengspot/img1.png" alt="임시"></div>
+                                <div class="card_txt">
+                                    <h4>산책코스 2</h4>
+                                    <p>나중에 내용 수정해주세요</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="card_img"><img src="./images/sub1_daengspot/img1.png" alt="임시"></div>
+                                <div class="card_txt">
+                                    <h4>산책코스 3</h4>
+                                    <p>나중에 내용 수정해주세요</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="card_img"><img src="./images/sub1_daengspot/img1.png" alt="임시"></div>
+                                <div class="card_txt">
+                                    <h4>산책코스 4</h4>
+                                    <p>나중에 내용 수정해주세요</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="card_img"><img src="./images/sub1_daengspot/img1.png" alt="임시"></div>
+                                <div class="card_txt">
+                                    <h4>산책코스 5</h4>
+                                    <p>나중에 내용 수정해주세요</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="card_img"><img src="./images/sub1_daengspot/img1.png" alt="임시"></div>
+                                <div class="card_txt">
+                                    <h4>산책코스 6</h4>
+                                    <p>나중에 내용 수정해주세요</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="slide_btn next_btn">
+                        <svg viewBox="0 0 24 24" width="40" height="40">
+                            <circle cx="12" cy="12" r="11" fill="none" stroke="#111" stroke-width="2" />
+                            <path d="M10 7l5 5-5 5" fill="none" stroke="#111" stroke-width="2" />
+                        </svg>
+                    </button>
+                </div>
+                <div id="spot_nature" class="slider_wrap" style="display: none;">
+                    <button class="slide_btn prev_btn">
+                        <svg viewBox="0 0 24 24" width="40" height="40">
+                            <circle cx="12" cy="12" r="11" fill="none" stroke="#111" stroke-width="2" />
+                            <path d="M14 7l-5 5 5 5" fill="none" stroke="#111" stroke-width="2" />
+                        </svg>
+                    </button>
+
+                    <div class="slider_viewport">
+                        <ul class="slide_track">
+                            <li class="card">
+                                <div class="card_img"><img src="./images/sub1_daengspot/img1.png" alt="임시"></div>
+                                <div class="card_txt">
+                                    <h4>자연스팟 1</h4>
+                                    <p>나중에 내용 수정해주세요</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="card_img"><img src="./images/sub1_daengspot/img1.png" alt="임시"></div>
+                                <div class="card_txt">
+                                    <h4>자연스팟 2</h4>
+                                    <p>나중에 내용 수정해주세요</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="card_img"><img src="./images/sub1_daengspot/img1.png" alt="임시"></div>
+                                <div class="card_txt">
+                                    <h4>자연스팟 3</h4>
+                                    <p>나중에 내용 수정해주세요</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="card_img"><img src="./images/sub1_daengspot/img1.png" alt="임시"></div>
+                                <div class="card_txt">
+                                    <h4>자연스팟 4</h4>
+                                    <p>나중에 내용 수정해주세요</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="card_img"><img src="./images/sub1_daengspot/img1.png" alt="임시"></div>
+                                <div class="card_txt">
+                                    <h4>자연스팟 5</h4>
+                                    <p>나중에 내용 수정해주세요</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="card_img"><img src="./images/sub1_daengspot/img1.png" alt="임시"></div>
+                                <div class="card_txt">
+                                    <h4>자연스팟 6</h4>
+                                    <p>나중에 내용 수정해주세요</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="slide_btn next_btn">
+                        <svg viewBox="0 0 24 24" width="40" height="40">
+                            <circle cx="12" cy="12" r="11" fill="none" stroke="#111" stroke-width="2" />
+                            <path d="M10 7l5 5-5 5" fill="none" stroke="#111" stroke-width="2" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </section> <!-- daengspot_list끝 -->
+
+
+
+
+        <section class="daengspot_recommend">
+            <div class="inner_recommend">
+                <h2 data-aos="fade-down" data-aos-duration="1000">이런 댕댕이에게 <span class="point_color">추천</span>해요!</h2>
+
+                <div class="recommend_content">
+
+                    <div class="rec_center">
+                        <img src="./images/sub1_daengspot/daengspotcahr2.png" alt="추천 팻말을 든 댕댕이">
+                    </div>
+
+                    <a href="#none" class="rec_icon icon_yellow" data-aos="zoom-in" data-aos-delay="200"
+                        data-aos-duration="600">
+                        <img src="./images/sub1_daengspot/yellow_icon.png" alt="산책 좋아하는 댕댕이">
+                        <svg class="arrow_circle_btn" viewBox="0 0 36 36" width="30" height="34">
+                            <circle cx="18" cy="18" r="16" fill="none" stroke="#ffffff" stroke-width="2" />
+                            <path d="M15 11l7 7-7 7" fill="none" stroke="#ffffff" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+
+                    <a href="#none" class="rec_icon icon_purple" data-aos="zoom-in" data-aos-delay="400"
+                        data-aos-duration="600">
+                        <img src="./images/sub1_daengspot/purple_icon.png" alt="포토존 좋아하는 댕댕이">
+                        <svg class="arrow_circle_btn" viewBox="0 0 36 36" width="30" height="34">
+                            <circle cx="18" cy="18" r="16" fill="none" stroke="#ffffff" stroke-width="2" />
+                            <path d="M15 11l7 7-7 7" fill="none" stroke="#ffffff" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+
+                    <a href="#none" class="rec_icon icon_green" data-aos="zoom-in" data-aos-delay="600"
+                        data-aos-duration="600">
+                        <img src="./images/sub1_daengspot/green_icon.png" alt="조용한 곳이 편한 댕댕이">
+                        <svg class="arrow_circle_btn" viewBox="0 0 36 36" width="30" height="34">
+                            <circle cx="18" cy="18" r="16" fill="none" stroke="#ffffff" stroke-width="2" />
+                            <path d="M15 11l7 7-7 7" fill="none" stroke="#ffffff" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+
+                    <a href="#none" class="rec_icon icon_blue" data-aos="zoom-in" data-aos-delay="800"
+                        data-aos-duration="600">
+                        <img src="./images/sub1_daengspot/blue_icon.png" alt="자연 냄새 좋아하는 댕댕이">
+                        <svg class="arrow_circle_btn" viewBox="0 0 36 36" width="30" height="34">
+                            <circle cx="18" cy="18" r="16" fill="none" stroke="#ffffff" stroke-width="2" />
+                            <path d="M15 11l7 7-7 7" fill="none" stroke="#ffffff" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+
+                </div> <!-- recommend_content 끝 -->
+            </div> <!-- inner_recommend끝 -->
+
+        </section> <!-- daengspot_recommend 끝 -->
+
+
+
+
+        <section class="daengeditor_course">
+
+        </section> <!-- daengeditor_course끝 -->
+
+        <div class="inner_course">
+            <div class="course_title_wrap" data-aos="fade-up" data-aos-duration="1000">
+                <div class="title_center">
+                    <img src="./images/sub1_daengspot/crown_icon.png" alt="왕관" class="crown_icon" data-aos="fade-down"
+                        data-aos-delay="300">
+                    <h2>믿고 따라가는 <span class="point_color">댕디터 추천코스</span></h2>
+                    <img src="./images/sub1_daengspot/wand_icon.png" alt="요술봉" class="wand_icon" data-aos="fade-left"
+                        data-aos-delay="500">
+                </div>
+
+                <div class="title_right">
+                    <a href="#none" class="more_btn">댕디터 추천 더보기
+                        <svg class="long_arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 14" width="40"
+                            height="14">
+                            <path d="M2 7h36M31 1l7 6-7 6" fill="none" stroke="currentColor" stroke-width="4"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="editor_card_list" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
+                <div class="editor_card">
+                    <img src="./images/sub1_daengspot/card_img1.png" alt="모리 댕디터 추천코스">
+                    <a href="#none" class="card_link_btn">추천코스 따라가기
+                        <svg viewBox="0 0 24 24" width="22" height="22">
+                            <path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="4"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="editor_card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <img src="./images/sub1_daengspot/card_img2.png" alt="라떼 댕디터 추천코스">
+                    <a href="#none" class="card_link_btn">추천코스 따라가기
+                        <svg viewBox="0 0 24 24" width="22" height="22">
+                            <path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="4"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="editor_card" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <img src="./images/sub1_daengspot/card_img3.png" alt="푸린이 댕디터 추천코스">
+                    <a href="#none" class="card_link_btn">추천코스 따라가기
+
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="editor_banner" data-aos="flip-up" data-aos-duration="1000" data-aos-offset="100">
+                <a href="#none">
+                    <img src="./images/sub1_daengspot/event_banner.png" alt="강아지랑 부산을 기록하자! 댕디터 모집중">
+                </a>
+            </div>
+
+        </div>
+        </section>
+
+
+
+        <div id="footer">
+            <div class="inner_footer">
+
+                <div class="f_top_box">
+                    <div class="f_logo">
+                        <img src="./images/main/footer_logo.png" alt="푸터 댕부산로고">
+                    </div>
+
+                    <div class="f_info">
+                        <p><span>CEO |</span> Minje Choi</p>
+                        <p><span>Address |</span> 부산광역시 중구 중앙대로 26 다원중앙타워 빌딩 10층</p>
+                        <p><span>대표번호 |</span> 010-7235-5859</p>
+                        <p><span>E-mail |</span> minje5859@naver.com</p>
+                    </div>
+
+                    <div class="f_contact">
+                        <div class="fc_txt">
+                            <p>FOLLOW US</p>
+                            <p>CONTACT US</p>
+                        </div>
+                        <div class="fc_icons">
+                            <a href="#"><img src="./images/main/email_icon.png" alt="이메일"></a>
+                            <a href="#"><img src="./images/main/insta_icon.png" alt="인스타그램"></a>
+                            <a href="#"><img src="./images/main/kakao_icon.png" alt="카카오톡"></a>
+                        </div>
+                    </div> <!-- f_contact끝 -->
+                </div> <!-- f_top_box끝 -->
+
+                <div class="f_bottom_box">
+                    <p class="copyright">© Copyright 2018 Sanaicompany. All rights reserved.</p>
+                </div>
+
+            </div> <!-- ineer_footer 끝 -->
+        </div> <!-- footer 끝 -->
+
+
+
+
+    </div> <!-- wrap끝 -->
+
+
+
+    <!-- jQuery 라이브러리 추가 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- js 제어구문 연결 -->
+    <script src="js/script1.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
