@@ -360,12 +360,12 @@ body {
     background: none;
     border: none;
     cursor: pointer;
-    /* transition: transform 0.2s; */
+    transition: transform 0.2s;
 }
 
 
 .slide_btn:hover {
-    transform: scale(1.1); /* 화살표에 마우스 올리면 살짝 커지는 효과 */
+    transform: scale(1.2); /* 화살표에 마우스 올리면 살짝 커지는 효과 */
 }
 
 /* 슬라이드가 보이는 창 (카드 4개가 딱 맞게 들어가는 너비) */
@@ -536,7 +536,7 @@ body {
 
 /* 동그라미 버튼에 마우스를 올렸을 때 커지는 효과 */
 .arrow_circle_btn:hover {
-    transform: scale(1.15); 
+    transform: scale(1.3);
 }
 
 /* === 화살표 개별 위치 조정 (글자 '댕댕이' 바로 오른쪽) === */
@@ -658,6 +658,7 @@ body {
 .more_btn:hover {
     background-color: #D08E4A;
     color: #ffffff;
+     transition: all 0.5s ease;
 }
 
 /* --- 길쭉한 화살표 아이콘 스타일 --- */
