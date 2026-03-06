@@ -625,12 +625,12 @@ body {
     display: block;
     position: relative;
     /* 글자를 이미지 위에 올리기 위한 기준점 */
-    /* transition: transform 0.3s ease; 마우스 올렸을 때 부드러운 움직임 */
+    transition: transform 0.3s ease !important; 
 }
 
 /* 마우스 호버 시 살짝 위로 떠오르는 효과 (선택사항) */
 .partner_item:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) !important;
 }
 
 .partner_item img {
