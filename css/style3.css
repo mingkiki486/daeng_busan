@@ -640,7 +640,7 @@ body {
 #footer {
     width: 100%;
     /* 배경 그라데이션 */
-    background: linear-gradient(to bottom, #fff 0%, #FFE2A5 100%);
+    background: linear-gradient(to bottom, #F9F5EC 0%, #FFE2A5 100%);
     padding-top: 120px;
     /* padding-bottom은 f_bottom_box에서 처리 */
 }
